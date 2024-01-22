@@ -27,6 +27,8 @@ If this repository is useful for your research, please consider citing our paper
 * [Update](#update) 
 
 ## Overview
+Graph pooling is an essential component of GNNs for graph-level representations. The goal of graph pooling is to learn a graph representation that captures topology, node features, and other relational characteristics in the graph, which can be used as input to downstream machine learning tasks. Typically, there are two types of graph pooling: global pooling or readout to condense the input graph into a single vector, and hierarchical pooling to condense the input graph as a smaller-sized graph.
+
 ## Global Pooling
 1. **[Neural graph fingerprints]** Duvenaud D, Maclaurin D, Aguilera-Iparraguirre J, et al (2015) Convolutional Networks on Graphs for Learning Molecular Fingerprints. In: Advances in Neural Information Processing Systems [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2015/hash/f9be311e65d81a9ad8150a60844bb94c-Abstract.html) [**[Code]**](https://github.com/HIPS/neural-fingerprint) 
 
