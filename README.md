@@ -162,7 +162,7 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 0. **[MATHNET]** Zheng X, Zhou B, Li M, et al (2020) MathNet: Haar-Like Wavelet Multiresolution-Analysis for Graph Representation and Learning. arXiv preprint arXiv:200711202 [**[Paper]**](https://doi.org/10.1016/j.knosys.2023.110609) 
 
 ### Selection Pooling
-0. **[AttPool]** Huang J, Li Z, Li N, et al (2019) Attpool: Towards hierarchical feature representation in graph convolutional networks via attention mechanism. In: Proceedings of the IEEE International Conference on Computer Vision. pp 6479–6488 [**[Paper]**](https://openaccess.thecvf.com/content_ICCV_2019/html/Huang_AttPool_Towards_Hierarchical_Feature_Representation_in_Graph_Convolutional_Networks_via_ICCV_2019_paper.html) [**[Code]**](https://github.com/hjjpku/Attention_in_Graph) 
+1. **[AttPool]** Huang J, Li Z, Li N, et al (2019) Attpool: Towards hierarchical feature representation in graph convolutional networks via attention mechanism. In: Proceedings of the IEEE International Conference on Computer Vision. pp 6479–6488 [**[Paper]**](https://openaccess.thecvf.com/content_ICCV_2019/html/Huang_AttPool_Towards_Hierarchical_Feature_Representation_in_Graph_Convolutional_Networks_via_ICCV_2019_paper.html) [**[Code]**](https://github.com/hjjpku/Attention_in_Graph) 
 
 0. **[gPool]** Gao H, Ji S (2019) Graph U-Nets. In: Proceedings of the 36th International Conference on Machine Learning. pp 2083--2092 [**[Paper]**](https://proceedings.mlr.press/v97/gao19a.html) [**[Code]**](https://github.com/HongyangGao/Graph-U-Nets) 
 
@@ -348,7 +348,9 @@ Mesquita, D., Souza, A., & Kaski, S. (2020). Rethinking pooling in graph neural 
 0. **[MULTIPLAI]** Martin-Gonzalez, P., Crispin-Ortuzar, M., & Markowetz, F. (2021). Predictive modelling of highly multiplexed tumour tissue images by graph neural networks. In Interpretability of Machine Intelligence in Medical Image Computing, and Topological Data Analysis and Its Applications for Medical Data: 4th International Workshop, iMIMIC 2021, and 1st International Workshop, TDA4MedicalData 2021, Held in Conjunction with MICCAI 2021, Strasbourg, France, September 27, 2021, Proceedings 4 (pp. 98-107). Springer International Publishing. [**[Paper]**](https://doi.org/10.1007/978-3-030-87444-5_10) [**[Code]**]( https://github.com/markowetzlab/MULTIPLAI) 
 0. **[GNN-MIL]** Adnan, M., Kalra, S., & Tizhoosh, H. R. (2020). Representation learning of histopathology images using graph neural networks. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (pp. 988-989). [**[Paper]**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Adnan_Representation_Learning_of_Histopathology_Images_Using_Graph_Neural_Networks_CVPRW_2020_paper.html)
 ### Molecular Structure
-1. **[SIGN]** Li, S., Zhou, J., Xu, T., Huang, L., Wang, F., Xiong, H., ... & Xiong, H. (2021, August). Structure-aware interactive graph neural networks for the prediction of protein-ligand binding affinity. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (pp. 975-985). [**[Paper]**](https://doi.org/10.1145/3447548.3467311) [**[Code]**](https://github.com/agave233/SIGN) 
+1. **[Struct2GO]** Jiao, P., Wang, B., Wang, X., Liu, B., Wang, Y., & Li, J. (2023). Struct2GO: protein function prediction based on graph pooling algorithm and AlphaFold2 structure information. Bioinformatics, 39(10), btad637. [**[Paper]**]([https://doi.org/10.1145/3447548.3467311](https://doi.org/10.1093/bioinformatics/btad637)) [**[Code]**]([https://github.com/agave233/SIGN](https://github.com/lyjps/Struct2GO))
+
+2. **[SIGN]** Li, S., Zhou, J., Xu, T., Huang, L., Wang, F., Xiong, H., ... & Xiong, H. (2021, August). Structure-aware interactive graph neural networks for the prediction of protein-ligand binding affinity. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (pp. 975-985). [**[Paper]**](https://doi.org/10.1145/3447548.3467311) [**[Code]**](https://github.com/agave233/SIGN) 
 
 0. **[APMNet]** Shen, H., Zhang, Y., Zheng, C., Wang, B., & Chen, P. (2021). A Cascade graph convolutional network for predicting protein–ligand binding affinity. International journal of molecular sciences, 22(8), 4023. [**[Paper]**](https://doi.org/10.3390/ijms22084023)
 
@@ -362,7 +364,7 @@ Mesquita, D., Souza, A., & Kaski, S. (2020). Rethinking pooling in graph neural 
 
 0. **[GIGN]** Yang, Z., Zhong, W., Lv, Q., Dong, T., & Yu-Chian Chen, C. (2023). Geometric Interaction Graph Neural Network for Predicting Protein–Ligand Binding Affinities from 3D Structures (GIGN). The Journal of Physical Chemistry Letters, 14(8), 2020-2033. [**[Paper]**](https://doi.org/10.1021/acs.jpclett.2c03906) [**[Code]**](https://github.com/guaguabujianle/GIGN) 
 
-0. **[GraphSite]**  [**[Paper]**](https://doi.org/10.3390/biom12081053) [**[Code]**](https://github.com/shiwentao00/Graphsiteclassifier) 
+0. **[GraphSite]** Shi, W., Singha, M., Pu, L., Srivastava, G., Ramanujam, J., & Brylinski, M. (2022). GraphSite: Ligand Binding Site Classification with Deep Graph Learning. Biomolecules, 12(8), 1053. [**[Paper]**](https://doi.org/10.3390/biom12081053) [**[Code]**](https://github.com/shiwentao00/Graphsiteclassifier) 
 
 0. **[IGN]** Jiang, D., Hsieh, C. Y., Wu, Z., Kang, Y., Wang, J., Wang, E., ... & Hou, T. (2021). InteractionGraphNet: a novel and efficient deep graph representation learning framework for accurate protein–ligand interaction predictions. Journal of medicinal chemistry, 64(24), 18209-18232. [**[Paper]**](https://doi.org/10.1021/acs.jmedchem.1c01830) [**[Code]**](https://github.com/zjujdj/InteractionGraphNet/tree/master) 
 
