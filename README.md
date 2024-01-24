@@ -317,7 +317,6 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 </table>
 
 ## Evaluation, Review and Analysis
-Mesquita, D., Souza, A., & Kaski, S. (2020). Rethinking pooling in graph neural networks. Advances in Neural Information Processing Systems, 33, 2220-2231.
 1. Mesquita, D., Souza, A., & Kaski, S. (2020). Rethinking pooling in graph neural networks. Advances in Neural Information Processing Systems, 33, 2220-2231. [**[Paper]**](https://proceedings.neurips.cc/paper/2020/hash/1764183ef03fc7324eb58c3842bd9a57-Abstract.html) [**[Code]**](https://github.com/AaltoPML/Rethinking-pooling-in-GNNs) 
 
 1. Grattarola, D., Zambon, D., Bianchi, F. M., & Alippi, C. (2022). Understanding pooling in graph neural networks. IEEE Transactions on Neural Networks and Learning Systems. [**[Paper]**](https://doi.org/10.1109/TNNLS.2022.3190922) [**[Code]**](https://github.com/danielegrattarola/SRC) 
