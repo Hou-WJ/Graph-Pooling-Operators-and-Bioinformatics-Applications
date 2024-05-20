@@ -1,8 +1,8 @@
 # Graph Pooling Operators and Bioinformatics Applications 
 
-# A Survey of Graph Pooling Operators for Graph Neural Networks and Their Applications in Bioinformatics
+# Graph Pooling in Graph Neural Networks: Methods and Their Applications in Omics
 
-## Paper [**[Paper Link]**](#table-of-contents)
+## Paper [**[Paper]**]() [**[TOC]**](#table-of-contents)
 ## Cite
 If this repository is useful for your research, please consider citing our paper.
 ```
@@ -18,12 +18,16 @@ If this repository is useful for your research, please consider citing our paper
   - [Selection Pooling](#selection-pooling)
   - [Edge Pooling](#edge-pooling)
   - [Hybrid Pooling](#hybrid-pooling)
-  - [Graph Unpooling](#graph-unpooling)
-* [Benchmark Datasets](#benchmark-datasets) 
-* [Applications in Bioinformatics](#applications-in-bioinformatics)
-  - [Biological Networks from Medical Images](#biological-networks-from-medical-images)
-  - [Molecular Structure](#molecular-structure)
-  - [Others](#others)
+* [Graph Unpooling](#graph-unpooling) 
+* [Benchmark Datasets](#benchmark-datasets)
+* [Libraries](#libraries) 
+* [Evaluation, Review and Analysis](#evaluation-review-and-analysis)
+* [Applications in Multi-omics Data](#applications-in-bioinformatics)
+  - [Genomics](#proteomics)
+  - [Radiomics](#radiomics)
+  - [Proteomics](#proteomics)
+  - [Metabolomics](#metabolomics)
+  - [Multi-omics](#multi-omics)
 * [Update](#update) 
 
 ## Overview
@@ -88,6 +92,8 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 28. **[MLAP]** Itoh TD, Kubo T, Ikeda K (2022) Multi-level attention pooling for graph neural networks: Unifying graph representations with multiple localities. Neural Networks 145:356–373. [**[Paper]**](https://doi.org/10.1016/j.neunet.2021.11.001)
 
 29. **[Adaptive Readouts]** Buterez D, Janet JP, Kiddle SJ, et al (2022) Graph Neural Networks with Adaptive Readouts. In: Advances in Neural Information Processing Systems. pp 19746–19758 [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2022/hash/7caf9d251b546bc78078b35b4a6f3b7e-Abstract-Conference.html) [**[Code]**](https://github.com/davidbuterez/gnn-neural-readouts) 
+
+30. **[SSVP]** Liu, Y., & Du, B. (2024). Frequency Domain-Oriented Complex Graph Neural Networks for Graph Classification. IEEE Transactions on Neural Networks and Learning Systems. [**[Paper]**](https://doi.org/10.1109/TNNLS.2024.3351762) [**[Code]**](https://github.com/Liuyouf/ComplexGNN) 
 
 
 ## Hierarchical Pooling
@@ -159,7 +165,19 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[AdamGNN]** Zhong Z, Li C-T, Pang J (2022) Multi-grained Semantics-aware Graph Neural Networks. IEEE Trans Knowl Data Eng 7251-7262.  [**[Paper]**](https://doi.org/10.1109/TKDE.2022.3195004) [**[Code]**](https://github.com/zhiqiangzhongddu/AdamGNN) 
 
+0. **[DMoN]** Tsitsulin, A., Palowitch, J., Perozzi, B., & Müller, E. (2023). Graph clustering with graph neural networks. Journal of Machine Learning Research, 24(127), 1-21. [**[Paper]**](https://www.jmlr.org/papers/v24/20-998.html) [**[Code]**](https://github.com/google-research/google-research/tree/master/graph_embedding/dmon)
+
 0. **[MATHNET]** Zheng X, Zhou B, Li M, et al (2020) MathNet: Haar-Like Wavelet Multiresolution-Analysis for Graph Representation and Learning. arXiv preprint arXiv:200711202 [**[Paper]**](https://doi.org/10.1016/j.knosys.2023.110609) 
+
+0. **[GTV]** Hansen, J. B., & Bianchi, F. M. (2023, July). Total variation graph neural networks. In International Conference on Machine Learning (pp. 12445-12468). PMLR. [**[Paper]**](https://proceedings.mlr.press/v202/hansen23a.html) [**[Code]**](https://github.com/FilippoMB/Total-variation-graph-neural-networks)
+
+0. **[k-MIS]** Bacciu, D., Conte, A., & Landolfi, F. (2023, June). Generalizing downsampling from regular data to graphs. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 6, pp. 6718-6727). [**[Paper]**](https://doi.org/10.1609/aaai.v37i6.25824) 
+
+0. **[Topology-Invariant Pooling]** Ying, C., Zhao, X., & Yu, T. (2024). Boosting Graph Pooling with Persistent Homology. arXiv preprint arXiv:2402.16346. [**[Paper]**](https://doi.org/10.48550/arXiv.2402.16346) 
+
+0. **[GPN]** Song, Y., Huang, S., Wang, X., Zhou, C., & Lin, Z. (2023, October). Graph Parsing Networks. In The Twelfth International Conference on Learning Representations. [**[Paper]**](https://openreview.net/forum?id=hv3SklibkL) [**[Code]**](https://github.com/LUMIA-Group/GraphParsingNetworks)
+
+0. **[SSHPool]** Xu, Z., Cui, L., Wang, Y., Du, H., Bai, L., & Hancock, E. R. (2024). SSHPool: The Separated Subgraph-based Hierarchical Pooling. arXiv preprint arXiv:2403.16133. [**[Paper]**](https://doi.org/10.48550/arXiv.2403.16133) 
 
 ### Selection Pooling
 1. **[AttPool]** Huang J, Li Z, Li N, et al (2019) Attpool: Towards hierarchical feature representation in graph convolutional networks via attention mechanism. In: Proceedings of the IEEE International Conference on Computer Vision. pp 6479–6488 [**[Paper]**](https://openaccess.thecvf.com/content_ICCV_2019/html/Huang_AttPool_Towards_Hierarchical_Feature_Representation_in_Graph_Convolutional_Networks_via_ICCV_2019_paper.html) [**[Code]**](https://github.com/hjjpku/Attention_in_Graph) 
@@ -218,6 +236,9 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[MID]** Liu C, Zhan Y, Yu B, et al (2023) On exploring node-feature and graph-structure diversities for node drop graph pooling. Neural Networks 167:559–571. [**[Paper]**](https://doi.org/https://doi.org/10.1016/j.neunet.2023.08.046) [**[Code]**](https://github.com/whuchuang/mid) 
 
+0. **[Element Ranking Pooling]** Guo, J., Guo, S., Zhou, Q., Liu, Z., Lu, X., & Huo, F. (2023, June). Graph knows unknowns: Reformulate zero-shot learning as sample-level graph recognition. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 6, pp. 7775-7783). [**[Paper]**](https://doi.org/10.1609/aaai.v37i6.25942) 
+
+
 ### Edge Pooling
 1. **[EdgePool]** Diehl F, Brunner T, Le MT, Knoll A (2019) Towards Graph Pooling by Edge Contraction. In: ICML 2019 Workshop on Learning and Reasoning with Graph-Structured Data [**[Paper1]**](https://arxiv.org/abs/1905.10990) [**[Paper2]**](https://graphreason.github.io/papers/17.pdf)
 
@@ -227,6 +248,8 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 4. **[H2MN]** Zhang Z, Bu J, Ester M, et al (2021b) H2MN: Graph Similarity Learning with Hierarchical Hypergraph Matching Networks. In: Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. pp 2274–2284 [**[Paper]**](https://doi.org/10.1145/3447548.3467328) [**[Code]**](https://github.com/cszhangzhen/H2MN) 
 
+4. **[CurvPool]** Sanders, C., Roth, A., & Liebig, T. (2023). Curvature-based pooling within graph neural networks. arXiv preprint arXiv:2308.16516. [**[Paper]**](https://doi.org/10.48550/arXiv.2308.16516) 
+
 ### Hybrid Pooling
 1. **[LookHops]** Gao Z, Lin H, Li StanZ (2020) LookHops: light multi-order convolution and pooling for graph classification. arXiv preprint arXiv:201215741 [**[Paper]**](https://arxiv.org/abs/2012.15741)
 2. **[ProxPool]** Gao X, Dai W, Li C, et al (2021b) Multiscale Representation Learning of Graph Data With Node Affinity. IEEE Trans Signal Inf Process Netw 7:30–44.  [**[Paper]**](https://doi.org/10.1109/TSIPN.2020.3044913)
@@ -234,7 +257,11 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 3. **[ASPool]** Yu H, Yuan J, Yao Y, Wang C (2022) Not all edges are peers: Accurate structure-aware graph pooling networks. Neural Networks 156:58–66. [**[Paper]**](https://doi.org/10.1016/j.neunet.2022.09.004)
 
 4. **[Co-Pooling]** Zhou Xiaowei and Yin J and TIW (2023) Edge but not Least: Cross-View Graph Pooling. In: Machine Learning and Knowledge Discovery in Databases. pp 344–359 [**[Paper]**](https://doi.org/10.1007/978-3-031-26390-3_21)
-### Graph Unpooling
+
+4. **[WGDPool]** Xiao, Z., Chen, H., Xiao, L., Wei, P., Wang, T., & Li, K. (2024). WGDPool: A broad scope extraction for weighted graph data. Expert Systems with Applications, 249, 123678. [**[Paper]**](https://doi.org/10.1016/j.eswa.2024.123678)
+
+
+## Graph Unpooling
 1. **[UL]** Guo Y, Zou D, Lerman G (2023) An Unpooling Layer for Graph Generation. In: Proceedings of The 26th International Conference on Artificial Intelligence and Statistics. PMLR, pp 3179–3209 [**[Paper]**](https://proceedings.mlr.press/v206/guo23a.html) [**[Code]**](https://github.com/guo00413/graph_unpooling) 
 
 ## Benchmark Datasets
@@ -316,12 +343,26 @@ Graph pooling is an essential component of GNNs for graph-level representations.
     </tr>
 </table>
 
+## Libraries
+| Librariy | URL  | Language and Platform | Description    |
+|-------|-------|-------|-------|
+|  |  |  |  |
+| PyTorch Geometric (PyG) | https://www.pyg.org/ | Python, PyTorch | PyG is a library built upon  PyTorch to easily write and train Graph Neural Networks (GNNs) for a wide range of applications related to structured data.It consists of various methods for deep learning on graphs and other irregular structures. [**[Home]**](https://www.pyg.org/) [**[Docs]**](https://pytorch-geometric.readthedocs.io/en/latest/) [**[Codes]**](https://github.com/pyg-team/pytorch_geometric) [**[Guides]**](https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html) |
+| Deep Graph Library | https://www.dgl.ai/ | Python, PyTorch/ TensorFlow/ MXNet | DGL is a Python package built for easy implementation of graph neural network model family, on top of existing DL frameworks (currently supporting PyTorch, MXNet and TensorFlow). It offers a versatile control of message passing, speed optimization via auto-batching and highly tuned sparse matrix kernels, and multi-GPU/CPU training to scale to graphs of hundreds of millions of nodes and edges. [**[Home]**](https://www.dgl.ai/) [**[Docs]**](https://docs.dgl.ai/) [**[Codes]**](https://github.com/dmlc/dgl) [**[Guides]**](https://docs.dgl.ai/tutorials/blitz/index.html) |
+| TensorFlow GNN (TF-GNN) | https://github.com/tensorflow/gnn | Python, TensorFlow | TensorFlow GNN is a library to build Graph Neural Networks on the TensorFlow platform. It provides a tfgnn.GraphTensor type to represent graphs with a heterogeneous schema, that is, multiple types of nodes and edges; tools for data preparation, notably a graph sampler to convert a huge database into a stream of reasonably-sized subgraphs for training and inference; a collection of ready-to-use models and Keras layers to do your own GNN modeling; a high-level API for training orchestration. [**[Home]**](https://github.com/tensorflow/gnn) [**[Docs]**](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/api_docs/README.md) [**[Codes]**](https://github.com/tensorflow/gnn) [**[Guides]**](https://github.com/tensorflow/gnn/blob/main/tensorflow_gnn/docs/guide/overview.md) |
+| tf_geometric | https://github.com/CrawlScript/tf_geometric | Python, TensorFlow | Tf_geometric is a Efficient and Friendly Graph Neural Network Library for TensorFlow 1.x and 2.x, inspired by rusty1s/pytorch_geometric. [**[Home]**](https://github.com/CrawlScript/tf_geometric) [**[Docs]**](https://tf-geometric.readthedocs.io/en/latest/) [**[Codes]**](https://github.com/CrawlScript/tf_geometric) [**[Guides]**](https://tf-geometric.readthedocs.io/en/latest/wiki/quickstart.html) [**[Paper]**](https://arxiv.org/abs/2101.11552) |
+| Jraph | https://github.com/google-deepmind/jraph | Python, JAX | Jraph (pronounced “giraffe”) is a lightweight library for working with graph neural networks in jax. It provides a data structure for graphs, a set of utilites for working with graphs, and a ‘zoo’ of forkable graph neural network models. [**[Home]**](https://github.com/google-deepmind/jraph) [**[Docs]**](https://jraph.readthedocs.io/en/latest/) [**[Codes]**](https://github.com/google-deepmind/jraph) [**[Guides]**](https://github.com/google-deepmind/jraph#quick-start) |
+| Spektral | https://graphneural.network/ | Python, TensorFlow & Keras | Spektral is a Python library for graph deep learning, based on the Keras API and TensorFlow 2. The main goal of this project is to provide a simple but flexible framework for creating graph neural networks (GNNs). [**[Home]**](https://graphneural.network/) [**[Docs]**](https://graphneural.network/) [**[Codes]**]() [**[Guides]**](https://graphneural.network/getting-started/) [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/9321429) |
+| GraphNeuralNetworks.jl | https://github.com/CarloLucibello/GraphNeuralNetworks.jl | Julia, Flux | GraphNeuralNetworks.jl is a fresh, performant and flexible graph neural network library based on Flux.jl. [**[Home]**](https://github.com/CarloLucibello/GraphNeuralNetworks.jl) [**[Docs]**](https://carlolucibello.github.io/GraphNeuralNetworks.jl/dev/) [**[Codes]**](https://github.com/CarloLucibello/GraphNeuralNetworks.jl) [**[Guides]**](https://github.com/CarloLucibello/GraphNeuralNetworks.jl/tree/master/examples) |
+| GeometricFlux.jl | https://github.com/FluxML/GeometricFlux.jl | Julia, Flux | GeometricFlux is a geometric deep learning library for Flux. This library aims to be compatible with packages from JuliaGraphs ecosystem and have support of CUDA GPU acceleration with CUDA. Message passing scheme is implemented as a flexbile framework and fused with Graph Network block scheme. GeometricFlux is compatible with other packages that are composable with Flux. [**[Home]**](https://github.com/FluxML/GeometricFlux.jl) [**[Docs]**](https://github.com/FluxML/GeometricFlux.jl/blob/master/docs/src/index.md) [**[Codes]**](https://github.com/FluxML/GeometricFlux.jl) [**[Guides]**](https://github.com/FluxML/GeometricFlux.jl/tree/master/docs/tutorials) |
+
+
 ## Evaluation, Review and Analysis
 1. Mesquita, D., Souza, A., & Kaski, S. (2020). Rethinking pooling in graph neural networks. Advances in Neural Information Processing Systems, 33, 2220-2231. [**[Paper]**](https://proceedings.neurips.cc/paper/2020/hash/1764183ef03fc7324eb58c3842bd9a57-Abstract.html) [**[Code]**](https://github.com/AaltoPML/Rethinking-pooling-in-GNNs) 
 
 1. Grattarola, D., Zambon, D., Bianchi, F. M., & Alippi, C. (2022). Understanding pooling in graph neural networks. IEEE Transactions on Neural Networks and Learning Systems. [**[Paper]**](https://doi.org/10.1109/TNNLS.2022.3190922) [**[Code]**](https://github.com/danielegrattarola/SRC) 
 
-1. Bianchi, F. M., & Lachi, V. (2023). The expressive power of pooling in graph neural networks. arXiv preprint arXiv:2304.01575. [**[Paper]**](https://arxiv.org/abs/2304.01575) [**[Code]**](https://github.com/FilippoMB/The-expressive-power-of-pooling-in-GNNs) 
+1. Bianchi, F. M., & Lachi, V. (2024). The expressive power of pooling in graph neural networks. Advances in Neural Information Processing Systems, 36. [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2023/hash/e26f31de8b13ec569bf507e6ae2cd952-Abstract-Conference.html) [**[Code]**](https://github.com/FilippoMB/The-expressive-power-of-pooling-in-GNNs) 
 
 1. Liu, C., Zhan, Y., Wu, J., Li, C., Du, B., Hu, W., ... & Tao, D. (2022). Graph pooling for graph neural networks: Progress, challenges, and opportunities. arXiv preprint arXiv:2204.07321.  [**[Paper]**](https://arxiv.org/abs/2204.07321)
 
@@ -329,14 +370,41 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 1. Errica, F., Podda, M., Bacciu, D., & Micheli, A. (2019, September). A Fair Comparison of Graph Neural Networks for Graph Classification. In International Conference on Learning Representations. [**[Paper]**](https://openreview.net/forum?id=HygDF6NFPB) [**[Code]**](https://github.com/diningphil/gnn-comparison) 
 
-## Applications in Bioinformatics
-### Biological Networks from Medical Images
+1. Yang, Z., Zhang, G., Wu, J., Yang, J., Sheng, Q. Z., Xue, S., ... & Li’o, P. (2023). A comprehensive survey of graph-level learning. arXiv preprint arXiv:2301.05860. [**[Paper]**](https://arxiv.org/abs/2301.05860v1) [**[Github]**](https://github.com/ZhenyuYangMQ/Awesome-Graph-Level-Learning) 
+
+1. Lachi, V., Moallemy-Oureh, A., Roth, A., & Welke, P. (2023, December). Graph Pooling Provably Improves Expressivity. In NeurIPS 2023 Workshop: New Frontiers in Graph Learning. [**[Paper]**](https://openreview.net/forum?id=lR5NYB9zrv) 
+
+
+
+
+## Applications in Multi-omics Data
+### Genomics
+1. **[HGNN]** Hou, W., Wang, Y., Zhao, Z., Cong, Y., Pang, W., & Tian, Y. (2024). Hierarchical graph neural network with subgraph perturbations for key gene cluster discovery in cancer staging. Complex & Intelligent Systems, 10(1), 111-128. [**[Paper]**](https://doi.org/10.1007/s40747-023-01068-6)
+
+1. **[GCNN]** Ramirez, R., Chiu, Y. C., Hererra, A., Mostavi, M., Ramirez, J., Chen, Y., ... & Jin, Y. F. (2020). Classification of cancer types using graph convolutional neural networks. Frontiers in physics, 8, 203. [**[Paper]**](https://doi.org/10.3389/fphy.2020.00203) [**[Code]**](https://github.com/RicardoRamirez2020/GCN_Cancer)
+
+1. **[Surv_GCNN]** Ramirez, R., Chiu, Y. C., Zhang, S., Ramirez, J., Chen, Y., Huang, Y., & Jin, Y. F. (2021). Prediction and interpretation of cancer survival using graph convolution neural networks. Methods, 192, 120-130. [**[Paper]**](https://doi.org/10.1016/j.ymeth.2021.01.004)
+
+1. **[GNN-SubNet]** Pfeifer, B., Saranti, A., & Holzinger, A. (2022). GNN-SubNet: disease subnetwork detection with explainable graph neural networks. Bioinformatics, 38(Supplement_2), ii120-ii126. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btac478) [**[Code]**](https://github.com/pievos101/GNN-SubNet)
+
+1. **[GLRP]** Chereda, H., Bleckmann, A., Menck, K., Perera-Bel, J., Stegmaier, P., Auer, F., ... & Beißbarth, T. (2021). Explaining decisions of graph convolutional neural networks: patient-specific molecular subnetworks responsible for metastasis prediction in breast cancer. Genome medicine, 13, 1-16. [**[Paper]**]( https://doi.org/10.1186/s13073-021-00845-7) [**[Code]**]( https://gitlab.gwdg.de/UKEBpublic/graph-lrp)
+
+1. **[CytoCommunity]** Hu, Y., Rong, J., Xu, Y., Xie, R., Peng, J., Gao, L., & Tan, K. (2024). Unsupervised and supervised discovery of tissue cellular neighborhoods from cell phenotypes. Nature Methods, 1-12. [**[Paper]**](https://doi.org/10.1038/s41592-023-02124-2) [**[Code]**](https://github.com/tanlabcode/CytoCommunity) [**[Code]**](https://www.zenodo.org/record/8335454)
+
+1. **[sigGCN]** Wang, T., Bai, J., & Nabavi, S. (2021). Single-cell classification using graph convolutional networks. BMC bioinformatics, 22, 1-23. [**[Paper]**](https://doi.org/10.1186/s12859-021-04278-2) [**[Code]**](https://github.com/NabaviLab/sigGCN)
+
+0.  Rhee, S., Seo, S., & Kim, S. (2018, July). Hybrid approach of relation network and localized graph convolutional filtering for breast cancer subtype classification. In Proceedings of the 27th International Joint Conference on Artificial Intelligence (pp. 3527-3534). [**[Paper]**](https://doi.org/10.24963/ijcai.2018/490)
+
+0. **[PathGNN]** Liang, B., Gong, H., Lu, L., & Xu, J. (2022). Risk stratification and pathway analysis based on graph neural network and interpretable algorithm. BMC bioinformatics, 23(1), 394. [**[Paper]**](https://doi.org/10.1186/s12859-022-04950-1) [**[Code]**](https://github.com/BioAI-kits/PathGNN) 
+
+
+### Radiomics
 1. **[BrainGNN]** Li, X., Zhou, Y., Dvornek, N., Zhang, M., Gao, S., Zhuang, J., ... & Duncan, J. S. (2021). Braingnn: Interpretable brain graph neural network for fmri analysis. Medical Image Analysis, 74, 102233. [**[Paper]**](https://doi.org/10.1016/j.media.2021.102233) [**[Code]**](https://github.com/xxlya/BrainGNN_Pytorch) 
 0. **[DH-SAGPool]** Zhang, S., Wang, J., Yu, S., Wang, R., Han, J., Zhao, S., ... & Lv, J. (2023). An explainable deep learning framework for characterizing and interpreting human brain states. Medical Image Analysis, 83, 102665. [**[Paper]**](https://doi.org/10.1016/j.media.2022.102665)
 0. **[GAT-LI]** Hu, J., Cao, L., Li, T., Dong, S., & Li, P. (2021). GAT-LI: a graph attention network based learning and interpreting method for functional brain network classification. BMC bioinformatics, 22(1), 1-20. [**[Paper]**](https://doi.org/10.1186/s12859-021-04295-1) [**[Code]**](https://github.com/largeapp/gat-li) 
 0. **[HSGPL]** Tang, H., Ma, G., Guo, L., Fu, X., Huang, H., & Zhan, L. (2022). Contrastive brain network learning via hierarchical signed graph pooling model. IEEE Transactions on Neural Networks and Learning Systems. [**[Paper]**](https://doi.org/10.1109/TNNLS.2022.3220220)
 0. **[GC+P]** Gopinath, K., Desrosiers, C., & Lombaert, H. (2020). Learnable pooling in graph convolutional networks for brain surface analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence, 44(2), 864-876.  [**[Paper]**](https://doi.org/10.1109/TPAMI.2020.3028391) [**[Code]**](https://github.com/kharitz/learnpool.git) 
-0. **[Multi-Channel Pooling]** Song, X., Zhou, F., Frangi, A. F., Cao, J., Xiao, X., Lei, Y., ... & Lei, B. (2022). Multicenter and Multichannel Pooling GCN for Early AD Diagnosis Based on Dual-Modality Fused Brain Network. IEEE Transactions on Medical Imaging, 42(2), 354-367. [**[Paper]**](https://doi.org/10.1109/TMI.2022.3187141) [**[Code]**]([https://github.com/Xuegang-S](https://github.com/Xuegang-S/MMP-GCN)) 
+0. **[Multi-Channel Pooling]** Song, X., Zhou, F., Frangi, A. F., Cao, J., Xiao, X., Lei, Y., ... & Lei, B. (2022). Multicenter and Multichannel Pooling GCN for Early AD Diagnosis Based on Dual-Modality Fused Brain Network. IEEE Transactions on Medical Imaging, 42(2), 354-367. [**[Paper]**](https://doi.org/10.1109/TMI.2022.3187141) [**[Code]**](https://github.com/Xuegang-S/MMP-GCN)
 0. **[MM-GNN]** Sebenius, I., Campbell, A., Morgan, S. E., Bullmore, E. T., & Liò, P. (2021, October). Multimodal graph coarsening for interpretable, MRI-based brain graph neural network. In 2021 IEEE 31st International Workshop on Machine Learning for Signal Processing (MLSP) (pp. 1-6). IEEE. [**[Paper]**](https://doi.org/10.1109/MLSP52302.2021.9690626) 
 0. **[PR-GNN]** Li, X., Zhou, Y., Dvornek, N. C., Zhang, M., Zhuang, J., Ventola, P., & Duncan, J. S. (2020). Pooling regularized graph neural network for fmri biomarker analysis. In Medical Image Computing and Computer Assisted Intervention–MICCAI 2020: 23rd International Conference, Lima, Peru, October 4–8, 2020, Proceedings, Part VII 23 (pp. 625-635). Springer International Publishing. [**[Paper]**](https://doi.org/10.1007/978-3-030-59728-3_61)
 0. **[SA-GCN]** Zhao, F., Li, N., Pan, H., Chen, X., Li, Y., Zhang, H., ... & Cheng, D. (2022). Multi-view feature enhancement based on self-attention mechanism graph convolutional network for autism spectrum disorder diagnosis. Frontiers in human neuroscience, 16, 918969. [**[Paper]**](https://doi.org/10.3389/fnhum.2022.918969) 
@@ -346,7 +414,62 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 0. **[HACT]** Pati, P., Jaume, G., Foncubierta-Rodriguez, A., Feroce, F., Anniciello, A. M., Scognamiglio, G., ... & Gabrani, M. (2022). Hierarchical graph representations in digital pathology. Medical image analysis, 75, 102264. [**[Paper]**](https://doi.org/10.1016/j.media.2021.102264) [**[Code]**](https://github.com/histocartography/hact-net) 
 0. **[MULTIPLAI]** Martin-Gonzalez, P., Crispin-Ortuzar, M., & Markowetz, F. (2021). Predictive modelling of highly multiplexed tumour tissue images by graph neural networks. In Interpretability of Machine Intelligence in Medical Image Computing, and Topological Data Analysis and Its Applications for Medical Data: 4th International Workshop, iMIMIC 2021, and 1st International Workshop, TDA4MedicalData 2021, Held in Conjunction with MICCAI 2021, Strasbourg, France, September 27, 2021, Proceedings 4 (pp. 98-107). Springer International Publishing. [**[Paper]**](https://doi.org/10.1007/978-3-030-87444-5_10) [**[Code]**]( https://github.com/markowetzlab/MULTIPLAI) 
 0. **[GNN-MIL]** Adnan, M., Kalra, S., & Tizhoosh, H. R. (2020). Representation learning of histopathology images using graph neural networks. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (pp. 988-989). [**[Paper]**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Adnan_Representation_Learning_of_Histopathology_Images_Using_Graph_Neural_Networks_CVPRW_2020_paper.html)
-### Molecular Structure
+
+0. **[CGC-Net]** Zhou, Y., Graham, S., Alemi Koohbanani, N., Shaban, M., Heng, P. A., & Rajpoot, N. (2019). Cgc-net: Cell graph convolutional network for grading of colorectal cancer histology images. In Proceedings of the IEEE/CVF international conference on computer vision workshops (pp. 0-0). [**[Paper]**](https://openaccess.thecvf.com/content_ICCVW_2019/html/VRMI/Zhou_CGC-Net_Cell_Graph_Convolutional_Network_for_Grading_of_Colorectal_Cancer_ICCVW_2019_paper.html) 
+
+0. Studer, L., Wallau, J., Dawson, H., Zlobec, I., & Fischer, A. (2021, January). Classification of intestinal gland cell-graphs using graph neural networks. In 2020 25th International conference on pattern recognition (ICPR) (pp. 3636-3643). IEEE. [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/9412535) [**[Code]**](https://github.com/waljan/GNNpT1) 
+
+0. Zhou, H., He, L., Zhang, Y., Shen, L., & Chen, B. (2022, March). Interpretable graph convolutional network of multi-modality brain imaging for alzheimer’s disease diagnosis. In 2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI) (pp. 1-5). IEEE. [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/9761449) 
+
+1. **[MS-GWNN]** Zhang, M., Dong, B., & Li, Q. (2022, March). MS-GWNN: multi-scale graph wavelet neural network for breast cancer diagnosis. In 2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI) (pp. 1-5). IEEE. [**[Paper]**](https://ieeexplore.ieee.org/abstract/document/9761464) 
+
+1. **[GCN-based MIL]** Zhao, Y., Yang, F., Fang, Y., Liu, H., Zhou, N., Zhang, J., ... & Yao, J. (2020). Predicting lymph node metastasis using histopathological images based on multiple instance learning with deep graph convolution. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 4837-4846). [**[Paper]**](https://openaccess.thecvf.com/content_CVPR_2020/html/Zhao_Predicting_Lymph_Node_Metastasis_Using_Histopathological_Images_Based_on_Multiple_CVPR_2020_paper.html) 
+
+1. **[CBHIR]** Zheng, Y., Jiang, B., Shi, J., Zhang, H., & Xie, F. (2019). Encoding histopathological wsis using gnn for scalable diagnostically relevant regions retrieval. In Medical Image Computing and Computer Assisted Intervention–MICCAI 2019: 22nd International Conference, Shenzhen, China, October 13–17, 2019, Proceedings, Part I 22 (pp. 550-558). Springer International Publishing. [**[Paper]**](https://link.springer.com/chapter/10.1007/978-3-030-32239-7_61) 
+
+1. Wang, J., Chen, R. J., Lu, M. Y., Baras, A., & Mahmood, F. (2020, April). Weakly supervised prostate tma classification via graph convolutional networks. In 2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI) (pp. 239-243). IEEE. [**[Paper]**](https://doi.org/10.1109/ISBI45749.2020.9098534) 
+
+1. **[CBIR]** Ozen, Y., Aksoy, S., Kösemehmetoğlu, K., Önder, S., & Üner, A. (2021, January). Self-supervised learning with graph neural networks for region of interest retrieval in histopathology. In 2020 25th International conference on pattern recognition (ICPR) (pp. 6329-6334). IEEE. [**[Paper]**]( https://doi.org/10.1109/ICPR48806.2021.9412903) 
+
+1. **[STAGIN]** Kim, B. H., Ye, J. C., & Kim, J. J. (2021). Learning dynamic graph representation of brain connectome with spatio-temporal attention. Advances in Neural Information Processing Systems, 34, 4314-4327. [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2021/hash/22785dd2577be2ce28ef79febe80db10-Abstract.html)  [**[Code]**](https://github.com/egyptdj/stagin)
+
+1. **[ContrastPool]** Xu, J., Bian, Q., Li, X., Zhang, A., Ke, Y., Qiao, M., ... & Gulyás, B. (2024). Contrastive Graph Pooling for Explainable Classification of Brain Networks. IEEE Transactions on Medical Imaging. [**[Paper]**]( https://doi.org/10.1109/TMI.2024.3392988)  [**[Code]**](https://github.com/AngusMonroe/ContrastPool)
+
+1. **[CLHOI]** Liu, S., & Gui, R. (2024). Fusing multi-scale fMRI features using a brain-inspired multi-channel graph neural network for major depressive disorder diagnosis. Biomedical Signal Processing and Control, 90, 105837. [**[Paper]**](https://doi.org/10.1016/j.bspc.2023.105837) 
+
+1. **[DSL-GNN]** Cao, J., Yang, L., Sarrigiannis, P. G., Blackburn, D., & Zhao, Y. (2024). Dementia classification using a graph neural network on imaging of effective brain connectivity. Computers in Biology and Medicine, 168, 107701. [**[Paper]**](https://doi.org/10.1016/j.compbiomed.2023.107701) 
+
+1. **[BrainTGL]** Liu, L., Wen, G., Cao, P., Hong, T., Yang, J., Zhang, X., & Zaiane, O. R. (2023). BrainTGL: A dynamic graph representation learning model for brain network analysis. Computers in Biology and Medicine, 153, 106521.  [**[Paper]**](https://doi.org/10.1016/j.compbiomed.2022.106521)
+
+1. **[PL-pooling]** Chan, T. H., Cendra, F. J., Ma, L., Yin, G., & Yu, L. (2023). Histopathology whole slide image analysis with heterogeneous graph representation learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 15661-15670).  [**[Paper]**](https://doi.org/10.1109/CVPR52729.2023.01503) [**[Code]**](https://github.com/HKU-MedAI/WSI-HGNN)
+
+1. **[SFC-GNN]** Tong, W., Li, Y. X., Zhao, X. Y., Chen, Q. Q., Gao, Y. B., Li, P., & Wu, E. Q. (2023). fMRI-based brain disease diagnosis: a graph network approach. IEEE Transactions on Medical Robotics and Bionics.  [**[Paper]**](https://doi.org/10.1109/TMRB.2023.3270481)
+
+1. **[GCN-SZ]** Chen, X., Ke, P., Huang, Y., Zhou, J., Li, H., Peng, R., ... & Wu, K. (2023). Discriminative analysis of schizophrenia patients using graph convolutional networks: A combined multimodal MRI and connectomics analysis. Frontiers in Neuroscience, 17, 1140801.   [**[Paper]**](https://doi.org/10.3389/fnins.2023.1140801) [**[Code]**](https://github.com/CXY-scut/GCN-SZ.git)
+
+1. **[GRN]** Gürler, Z., Gharsallaoui, M. A., Rekik, I., & Alzheimer’s Disease Neuroimaging Initiative. (2023). Template-based graph registration network for boosting the diagnosis of brain connectivity disorders. Computerized Medical Imaging and Graphics, 103, 102140.   [**[Paper]**](https://doi.org/10.1016/j.compmedimag.2022.102140) [**[Code]**](https://github.com/basiralab/GRN)
+
+### Proteomics
+
+1. **[HIGH-PPI]** Gao, Z., Jiang, C., Zhang, J., Jiang, X., Li, L., Zhao, P., ... & Li, J. (2023). Hierarchical graph learning for protein–protein interaction. Nature Communications, 14(1), 1093. [**[Paper]**](https://doi.org/10.1038/s41467-023-36736-1) [**[Code]**](https://github.com/zqgao22/HIGH-PPI)
+
+1. **[3DProtDTA]** Voitsitskyi, T., Stratiichuk, R., Koleiev, I., Popryho, L., Ostrovsky, Z., Henitsoi, P., ... & Starosyla, S. (2023). 3DProtDTA: a deep learning model for drug-target affinity prediction based on residue-level protein graphs. RSC advances, 13(15), 10261-10272. [**[Paper]**](https://doi.org/10.1039/D3RA00281K) [**[Code]**](https://github.com/vtarasv/3d-prot-dta.git)
+
+1. **[SS-GNN]** Zhang, S., Jin, Y., Liu, T., Wang, Q., Zhang, Z., Zhao, S., & Shan, B. (2023). SS-GNN: a simple-structured graph neural network for affinity prediction. ACS omega, 8(25), 22496-22507. [**[Paper]**](https://pubs.acs.org/doi/full/10.1021/acsomega.3c00085) [**[Code]**]( https://github.com/xianyuco/SS-GNN)
+
+1. **[HEAL]** Gu, Z., Luo, X., Chen, J., Deng, M., & Lai, L. (2023). Hierarchical graph transformer with contrastive learning for protein function prediction. Bioinformatics, 39(7), btad410. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btad410) [**[Code]**](https://github.com/ZhonghuiGu/HEAL)
+
+
+1. **[MedusaGraph]** Jiang, H., Wang, J., Cong, W., Huang, Y., Ramezani, M., Sarma, A., ... & Kandemir, M. T. (2022). Predicting protein–ligand docking structure with graph neural network. Journal of chemical information and modeling, 62(12), 2923-2932. [**[Paper]**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.2c00127) [**[Code]**](https://github.com/j9650/MedusaGraph) 
+
+1.  Wang, X., Hu, J., & Zhang, X. (2023, July). Drug-target affinity prediction based on self-attention graph pooling and mutual interaction neural network. In International Conference on Intelligent Computing (pp. 776-790). Singapore: Springer Nature Singapore. [**[Paper]**](https://link.springer.com/chapter/10.1007/978-981-99-4749-2_66) 
+
+1. **[ProteinGCN]** Sanyal, S., Anishchenko, I., Dagar, A., Baker, D., & Talukdar, P. (2020). ProteinGCN: Protein model quality assessment using graph convolutional networks. BioRxiv, 2020-04. [**[Paper]**](https://www.biorxiv.org/content/10.1101/2020.04.06.028266v1.abstract) [**[Code]**](https://github.com/malllabiisc/ProteinGCN)
+
+1. **[GAT-GO]** Lai, B., & Xu, J. (2022). Accurate protein function prediction via graph attention networks with predicted structure information. Briefings in Bioinformatics, 23(1), bbab502. [**[Paper]**](https://academic.oup.com/bib/article/23/1/bbab502/6457163) 
+
+1. **[GNN-DTI]** Lim, J., Ryu, S., Park, K., Choe, Y. J., Ham, J., & Kim, W. Y. (2019). Predicting drug–target interaction using a novel graph neural network with 3D structure-embedded graph representation. Journal of chemical information and modeling, 59(9), 3981-3988. [**[Paper]**](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00387) [**[Code]**](https://github.com/jaechanglim/GNN_DTI)
+
 1. **[Struct2GO]** Jiao, P., Wang, B., Wang, X., Liu, B., Wang, Y., & Li, J. (2023). Struct2GO: protein function prediction based on graph pooling algorithm and AlphaFold2 structure information. Bioinformatics, 39(10), btad637. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btad637) [**[Code]**](https://github.com/lyjps/Struct2GO)
 
 2. **[SIGN]** Li, S., Zhou, J., Xu, T., Huang, L., Wang, F., Xiong, H., ... & Xiong, H. (2021, August). Structure-aware interactive graph neural networks for the prediction of protein-ligand binding affinity. In Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining (pp. 975-985). [**[Paper]**](https://doi.org/10.1145/3447548.3467311) [**[Code]**](https://github.com/agave233/SIGN) 
@@ -377,15 +500,21 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[SGPPI]** Huang, Y., Wuchty, S., Zhou, Y., & Zhang, Z. (2023). SGPPI: structure-aware prediction of protein–protein interactions in rigorous conditions with graph convolutional network. Briefings in Bioinformatics, 24(2), bbad020. [**[Paper]**](https://doi.org/10.1093/bib/bbad020) [**[Code]**]( https://github.com/emerson106/SGPPI) 
 
-### Others
-1. **[HGNN]** Hou, W., Wang, Y., Zhao, Z., Cong, Y., Pang, W., & Tian, Y. (2023). Hierarchical graph neural network with subgraph perturbations for key gene cluster discovery in cancer staging. Complex & Intelligent Systems, 1-18. [**[Paper]**](https://doi.org/10.1007/s40747-023-01068-6)
+0. **[Graph-CNN]** Torng, W., & Altman, R. B. (2019). Graph convolutional neural networks for predicting drug-target interactions. Journal of chemical information and modeling, 59(10), 4131-4149. [**[Paper]**](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00628) 
 
-0. **[PathGNN]** Liang, B., Gong, H., Lu, L., & Xu, J. (2022). Risk stratification and pathway analysis based on graph neural network and interpretable algorithm. BMC bioinformatics, 23(1), 394. [**[Paper]**](https://doi.org/10.1186/s12859-022-04950-1) [**[Code]**](https://github.com/BioAI-kits/PathGNN) 
+0. **[DeepFRI]** Gligorijević, V., Renfrew, P. D., Kosciolek, T., Leman, J. K., Berenberg, D., Vatanen, T., ... & Bonneau, R. (2021). Structure-based protein function prediction using graph convolutional networks. Nature communications, 12(1), 3168. [**[Paper]**](https://doi.org/10.1038/s41467-021-23303-9) [**[Server]**](https://beta.deepfri.flatironinstitute.org/) [**[Code]**](https://github.com/flatironinstitute/DeepFRI)
+
+0.  Hermosilla Casajús, P., Schäfer, M., Lang, M., Fackelmann, G., Vázquez Alcocer, P. P., Kozliková, B., ... & Ropinski, T. (2021). Intrinsic-extrinsic convolution and pooling for learning on 3D protein structures. In International Conference on Learning Representations, ICLR 2021: Vienna, Austria, May 04 2021 (pp. 1-16). OpenReview. net. [**[Paper]**](https://openreview.net/forum?id=l0mSUROpwY) [**[Code]**](https://github.com/phermosilla/IEConv_proteins)
+
+### Metabolomics
+1. Baranwal, M., Magner, A., Elvati, P., Saldinger, J., Violi, A., & Hero, A. O. (2020). A deep learning architecture for metabolic pathway prediction. Bioinformatics, 36(8), 2547-2553. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btz954) [**[Code]**](https://github.com/baranwa2/MetabolicPathwayPrediction)
+
+### Multi-Omics
+1. **[PathomicFusion]** Chen, R. J., Lu, M. Y., Wang, J., Williamson, D. F., Rodig, S. J., Lindeman, N. I., & Mahmood, F. (2020). Pathomic fusion: an integrated framework for fusing histopathology and genomic features for cancer diagnosis and prognosis. IEEE Transactions on Medical Imaging, 41(4), 757-770. [**[Paper]**](10.1109/TMI.2020.3021387) [**[Code]**]( https://github.com/mahmoodlab/PathomicFusion)
 
 0.  Zhuo, L., Chen, Y., Song, B., Liu, Y., & Su, Y. (2022). A model for predicting ncRNA–protein interactions based on graph neural networks and community detection. Methods, 207, 74-80. [**[Paper]**](https://doi.org/10.1016/j.ymeth.2022.09.001) 
-
-0.  Rhee, S., Seo, S., & Kim, S. (2018, July). Hybrid approach of relation network and localized graph convolutional filtering for breast cancer subtype classification. In Proceedings of the 27th International Joint Conference on Artificial Intelligence (pp. 3527-3534). [**[Paper]**](https://doi.org/10.24963/ijcai.2018/490)
 
 0.  Li, B., & Nabavi, S. (2024). A multimodal graph neural network framework for cancer molecular subtype classification. BMC bioinformatics, 25(1), 27. [**[Paper]**](https://doi.org/10.1186/s12859-023-05622-4)
 
 ## Update
+* 2024-05-20: Newly added sections: Libraries, Genomics, Metabolomics, Multi-omics; additional papers; and revised title.
