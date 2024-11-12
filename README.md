@@ -2,11 +2,25 @@
 
 # Graph Pooling in Graph Neural Networks: Methods and Their Applications in Omics
 
-## Paper [**[Paper]**]() [**[TOC]**](#table-of-contents)
+## Paper [**[Paper]**](https://doi.org/10.1007/s10462-024-10918-9) [**[TOC]**](#table-of-contents)
 ## Cite
 If this repository is useful for your research, please consider citing our paper.
 ```
-@article{}
+@article{wangGraphPoolingGraph2024,
+  title = {Graph Pooling in Graph Neural Networks: Methods and Their Applications in Omics Studies},
+  author = {Wang, Yan and Hou, Wenju and Sheng, Nan and Zhao, Ziqi and Liu, Jialin and Huang, Lan and Wang, Juexin},
+  year = {2024},
+  month = sep,
+  journal = {Artificial Intelligence Review},
+  volume = {57},
+  number = {11},
+  pages = {294},
+  issn = {1573-7462},
+  doi = {10.1007/s10462-024-10918-9},
+  urldate = {2024-09-18},
+  abstract = {Graph neural networks (GNNs) process the graph-structured data using neural networks and have proven successful in various graph processing tasks. Currently, graph pooling operators have emerged as crucial components that bridge the gap between node representation learning and diverse graph-level tasks by transforming node representations into graph representations. Given the rapid growth and widespread adoption of graph pooling, this review aims to summarize the existing graph pooling operators for GNNs and their representative applications in omics. Specifically, we first present a comprehensive taxonomy of existing graph pooling algorithms, expanding the categorization for both global and hierarchical pooling operators, and for the first time reviewing the inverse operation of graph pooling, named unpooling. Next, we describe the general evaluation framework for graph pooling operators, encompassing three fundamental aspects: experimental setup, ablation analysis, and model interpretation. We also discuss open issues that significantly influence the design of graph pooling operators, including complexity, connectivity, adaptability, additional loss, and attention mechanisms. Finally, we summarize bioinformatics applications of graph pooling operators in omics, including graphs of gene interaction, medical images, and protein structures for drug discovery and disease diagnosis. Furthermore, we showcase the impact of graph pooling operators on research in specific real-world domains, with a focus on prediction performance and model interpretability. This review provides methodological insights in machine learning based graph modeling and related omics research, as well as an ongoing resource by gathering related papers and code in a dedicated GitHub repository (https://github.com/Hou-WJ/Graph-Pooling-Operators-and-Bioinformatics-Applications).}
+}
+
 ```
 ## News
 
