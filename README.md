@@ -42,6 +42,9 @@ If this repository is useful for your research, please consider citing our paper
   - [Proteomics](#proteomics)
   - [Metabolomics](#metabolomics)
   - [Multi-omics](#multi-omics)
+* [Applications in Biological Computing and Molecular Modeling](#applications-in-biological-computing-and-molecular-modeling)
+  - [Molecular Modeling](#molecular-modeling)
+  - [Biological Computing](#biological-computing)
 * [Update](#update) 
 
 ## Overview
@@ -109,6 +112,11 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 30. **[SSVP]** Liu, Y., & Du, B. (2024). Frequency Domain-Oriented Complex Graph Neural Networks for Graph Classification. IEEE Transactions on Neural Networks and Learning Systems. [**[Paper]**](https://doi.org/10.1109/TNNLS.2024.3351762) [**[Code]**](https://github.com/Liuyouf/ComplexGNN) 
 
+31. **[G-Prompt]** Duan, Y., Liu, J., Chen, S., Chen, L., & Wu, J. (2024). G-Prompt: Graphon-based Prompt Tuning for graph classification. Information Processing & Management, 61(3), 103639. [**[Paper]**](10.1016/j.ipm.2023.103639) 
+
+32. **[Hybrid pooling]** Dong, Z., Hu, Q., Zhang, Z., Guo, Y., Cordy, M., Papadakis, M., ... & Zhao, J. (2024). On the effectiveness of hybrid pooling in mixup-based graph learning for language processing. Journal of Systems and Software, 216, 112139. [**[Paper]**](https://doi.org/10.1016/j.jss.2024.112139) [**[Code]**](https://github.com/zemingd/HybridPool4Mixup) 
+
+33. **[AAGR]** Zhong, W., Mu, X., Zhang, J., & Li, D. (2025). AAGR: Graph-level Anomaly Detection with Anomaly-aware Graph Readout. Expert Systems with Applications, 128672. [**[Paper]**](https://doi.org/10.1016/j.eswa.2025.128672) [**[Code]**](https://github.com/zemingd/HybridPool4Mixup) 
 
 ## Hierarchical Pooling
 ### Clustering Pooling
@@ -193,6 +201,20 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[SSHPool]** Xu, Z., Cui, L., Wang, Y., Du, H., Bai, L., & Hancock, E. R. (2024). SSHPool: The Separated Subgraph-based Hierarchical Pooling. arXiv preprint arXiv:2403.16133. [**[Paper]**](https://doi.org/10.48550/arXiv.2403.16133) 
 
+0. **[MGPool]** Deng, S., Yang, G., Yang, Y., Gong, Z., Chen, C., Chen, X., & Hao, Z. (2024). Module-based graph pooling for graph classification. Pattern Recognition, 154, 110606. [**[Paper]**](https://doi.org/10.1016/j.patcog.2024.110606) [**[Code]**](https://github.com/ SubaiDeng/MGPool)
+
+0. **[HC-GAE]** Bai, L., Xu, Z., Cui, L., Li, M., Wang, Y., & Hancock, E. (2024). HC-GAE: The Hierarchical Cluster-based Graph Auto-Encoder for Graph Representation Learning. Advances in Neural Information Processing Systems, 37, 127968-127986. [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e6e706454d72c18582b9c1ff70b11f7d-Abstract-Conference.html) [**[Code]**](https://github.com/JonathanGXu/HC-GAE)
+
+0. **[SAGoG]** Wang, S., Zhang, Y., Lin, X., Hu, Y., Huang, Q., & Yin, B. (2025). SAGoG: Similarity-Aware Graph of Graphs Neural Networks for Multivariate Time Series Classification. IEEE Transactions on Knowledge and Data Engineering. [**[Paper]**](10.1109/TKDE.2025.3572216)
+
+0. **[GSpect]** Zhang, X., Yang, W., Feng, J., Dai, B., Bu, T., & Lu, X. (2024). GSpect: Spectral filtering for cross-scale graph classification. IEEE Transactions on Network Science and Engineering. [**[Paper]**](10.1109/TNSE.2024.3513456) [**[Code]**](https://github.com/XiaoyuZhang001/GSpect)
+
+0. **[RTPool]** Zhang, Y., Li, L., & Xia, K. Rhomboid Tiling for Geometric Graph Deep Learning. In Forty-second International Conference on Machine Learning. [**[Paper]**](https://openreview.net/forum?id=lTZEAqL1R1)
+
+0. **[HireGC]** Zhao, S., Xu, C., Du, Z., Zhang, Y., Duan, Z., & Chen, J. (2025). HireGC: Hierarchical inductive network representation learning via graph coarsening. Knowledge-Based Systems, 311, 113058. [**[Paper]**](https://doi.org/10.1016/j.knosys.2025.113058)
+
+0. **[SSGNN]** Zhang, Z., & Zhao, L. (2024). Self-similar graph neural network for hierarchical graph learning. In Proceedings of the 2024 SIAM International Conference on Data Mining (SDM) (pp. 28-36). Society for Industrial and Applied Mathematics. [**[Paper]**](https://doi.org/10.1137/1.9781611978032.4) [**[Code]**](https://github.com/rollingstonezz/SDM24_self_similar_graph)
+
 ### Selection Pooling
 1. **[AttPool]** Huang J, Li Z, Li N, et al (2019) Attpool: Towards hierarchical feature representation in graph convolutional networks via attention mechanism. In: Proceedings of the IEEE International Conference on Computer Vision. pp 6479–6488 [**[Paper]**](https://openaccess.thecvf.com/content_ICCV_2019/html/Huang_AttPool_Towards_Hierarchical_Feature_Representation_in_Graph_Convolutional_Networks_via_ICCV_2019_paper.html) [**[Code]**](https://github.com/hjjpku/Attention_in_Graph) 
 
@@ -248,10 +270,37 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[knnPool]** Chen C, Li K, Wei W, et al (2022a) Hierarchical Graph Neural Networks for Few-Shot Learning. IEEE Transactions on Circuits and Systems for Video Technology 32:240–252.  [**[Paper]**](https://doi.org/10.1109/TCSVT.2021.3058098) [**[Code]**](https://github.com/smartprobe/HGNN) 
 
-0. **[MID]** Liu C, Zhan Y, Yu B, et al (2023) On exploring node-feature and graph-structure diversities for node drop graph pooling. Neural Networks 167:559–571. [**[Paper]**](https://doi.org/https://doi.org/10.1016/j.neunet.2023.08.046) [**[Code]**](https://github.com/whuchuang/mid) 
+0. **[MID]** Liu C, Zhan Y, Yu B, et al (2023) On exploring node-feature and graph-structure diversities for node drop graph pooling. Neural Networks 167:559–571. [**[Paper]**](https://doi.org/10.1016/j.neunet.2023.08.046) [**[Code]**](https://github.com/whuchuang/mid) 
 
 0. **[Element Ranking Pooling]** Guo, J., Guo, S., Zhou, Q., Liu, Z., Lu, X., & Huo, F. (2023, June). Graph knows unknowns: Reformulate zero-shot learning as sample-level graph recognition. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 6, pp. 7775-7783). [**[Paper]**](https://doi.org/10.1609/aaai.v37i6.25942) 
 
+1. **[pqPool]** Amouzad, A., Dehghanian, Z., Saravani, S., Amirmazlaghani, M., & Roshanfekr, B. (2024). Graph isomorphism u-net. Expert Systems with Applications, 236, 121280. [**[Paper]**](https://doi.org/10.1016/j.eswa.2023.121280)
+
+0. **[NIAPool]** Sun, C., Huang, F., & Peng, J. (2022, May). Node information awareness pooling for graph representation learning. In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 182-193). Cham: Springer International Publishing. [**[Paper]**](10.1007/978-3-031-05933-9_15) 
+
+0. **[MVPPool]** Huang, J., & Wang, Y. Y. (2025). Multi-view parallel graph pooling. International Journal of Data Science and Analytics, 19(2), 257-267. [**[Paper]**](10.1007/s41060-023-00476-8)
+
+0. **[HGLA-Pool]** Ali, W., Vascon, S., Stadelmann, T., & Pelillo, M. (2024). Hierarchical glocal attention pooling for graph classification. Pattern Recognition Letters, 186, 71-77. [**[Paper]**](https://doi.org/10.1016/j.patrec.2024.09.009)
+
+0. **[MGR]** Huang, W., Chen, Y., Jiang, X., Gao, C., Zhang, T., Chen, Q., & Wang, Y. (2025, April). Mitigating Pervasive Modality Absence Through Multimodal Generalization and Refinement. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 25, pp. 26796-26804). [**[Paper]**](10.1609/aaai.v39i25.34883)
+
+0. **[GrePool]** Liu, C., Yu, W., Gao, K., Ma, X., Zhan, Y., Wu, J., ... & Du, B. (2025). Graph explicit pooling for graph-level representation learning. Neural Networks, 181, 106790. [**[Paper]**](https://doi.org/10.1016/j.neunet.2024.106790) [**[Code]**](https: //github.com/LiuChuang0059/GrePool) 
+
+0. **[Fair Graph Pooling]** Wang, Z., Chu, Z., Doan, T. V., Wang, S., Wu, Y., Palade, V., & Zhang, W. (2025, April). Fair graph u-net: A fair graph learning framework integrating group and individual awareness. In proceedings of the AAAI conference on artificial intelligence (Vol. 39, No. 27, pp. 28485-28493). [**[Paper]**](10.1609/aaai.v39i27.35071)
+
+0. **[GDMGP]** Wang, Z., & Fan, H. (2024). Multi-view graph pooling with coarsened graph disentanglement. Neural Networks, 174, 106221. [**[Paper]**](10.1016/j.neunet.2024.106221) 
+
+0. **[MSSGC]** Liu, W., & Guo, Q. (2025). Graph Classification via Hierarchical Structure Learning with Multi-Scale Convolution and Pooling. Engineering Letters, 33(5).
+
+0. **[GraphADT]** Ma, X., Fu, X., Wang, T., Zhuo, L., & Zou, Q. (2024). GraphADT: empowering interpretable predictions of acute dermal toxicity with multi-view graph pooling and structure remapping. Bioinformatics, 40(7), btae438. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btae438) [**[Code]**](https://github.com/mxqmxqmxq/GraphADT.git) 
+
+0. **[Wit-TopoPool]** Chen, Y., & Gel, Y. R. (2023, June). Topological pooling on graphs. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 37, No. 6, pp. 7096-7103). [**[Paper]**](10.1609/aaai.v37i6.25866) [**[Code]**](https://github.com/topologicalpooling/TopologicalPool.git) 
+
+0. **[DOTIN]** Zhong, C., Zhang, S., Zhu, F., Zhao, R., Yang, X., & Yan, J. (2025, April). Graph Pooling via Dropping Task-Irrelevant Nodes. In ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 1-5). IEEE. [**[Paper]**](10.1109/ICASSP49660.2025.10889769) [**[Code]**](https://github.com/Sherrylone/DOTIN) 
+
+0. **[DMIPool]** Zhao, Q., Zhang, H., He, M., Li, W., Kang, C., & Han, M. (2023). Graph pooling via dual-view multi-level infomax. Knowledge-Based Systems, 260, 110089. [**[Paper]**](https://doi.org/10.1016/j.knosys.2022.110089)
+
+0. **[GPIB]** Long, J., Wang, Z., Chen, T., & Yang, L. (2025). Improving hierarchical graph pooling with information bottleneck. Journal of King Saud University Computer and Information Sciences, 37(3), 36. [**[Paper]**](https://doi.org/10.1007/s44443-025-00046-x)
 
 ### Edge Pooling
 1. **[EdgePool]** Diehl F, Brunner T, Le MT, Knoll A (2019) Towards Graph Pooling by Edge Contraction. In: ICML 2019 Workshop on Learning and Reasoning with Graph-Structured Data [**[Paper1]**](https://arxiv.org/abs/1905.10990) [**[Paper2]**](https://graphreason.github.io/papers/17.pdf)
@@ -264,6 +313,10 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 4. **[CurvPool]** Sanders, C., Roth, A., & Liebig, T. (2023). Curvature-based pooling within graph neural networks. arXiv preprint arXiv:2308.16516. [**[Paper]**](https://doi.org/10.48550/arXiv.2308.16516) 
 
+4. **[MESPool]** Xu, F., Yang, Z., Wang, L., Meng, D., & Long, J. (2023). MESPool: Molecular Edge Shrinkage Pooling for hierarchical molecular representation learning and property prediction. Briefings in Bioinformatics, 25(1). [**[Paper]**](https://doi.org/10.1093/bib/bbad423) [**[Code]**](https://github.com/xfd997700/MESPool) 
+
+4. **[LGRPool]** Noravesh, F., Haffari, R., Soon, L., & Pal, A. (2025). LGRPool: Hierarchical Graph Pooling Via Local-Global Regularisation. arXiv preprint arXiv:2504.08530. [**[Paper]**](10.48550/arXiv.2504.08530)
+
 ### Hybrid Pooling
 1. **[LookHops]** Gao Z, Lin H, Li StanZ (2020) LookHops: light multi-order convolution and pooling for graph classification. arXiv preprint arXiv:201215741 [**[Paper]**](https://arxiv.org/abs/2012.15741)
 2. **[ProxPool]** Gao X, Dai W, Li C, et al (2021b) Multiscale Representation Learning of Graph Data With Node Affinity. IEEE Trans Signal Inf Process Netw 7:30–44.  [**[Paper]**](https://doi.org/10.1109/TSIPN.2020.3044913)
@@ -274,9 +327,17 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 4. **[WGDPool]** Xiao, Z., Chen, H., Xiao, L., Wei, P., Wang, T., & Li, K. (2024). WGDPool: A broad scope extraction for weighted graph data. Expert Systems with Applications, 249, 123678. [**[Paper]**](https://doi.org/10.1016/j.eswa.2024.123678)
 
+5. **[HPM-GMN]** Huang, Y., Miao, S., Zou, J., Mu, Y., Tian, Y., Wang, J., ... & Yao, S. (2025). Hpm-gmn: Hierarchical pooling multi-level graph matching network. Knowledge-Based Systems, 113677. [**[Paper]**](https://doi.org/10.1016/j.knosys.2025.113677)[**[Code]**](https://github.com/ynu123/HPM-GMN)
+
+5. **[Mpool]** Islam, M. I. K., Khanov, M., & Akbas, E. (2023, May). Mpool: motif-based graph pooling. In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 105-117). Cham: Springer Nature Switzerland. [**[Paper]**](10.1007/978-3-031-33377-4_9)
+
+5. **[GPS]** Ju, W., Gu, Y., Mao, Z., Qiao, Z., Qin, Y., Luo, X., ... & Zhang, M. (2025). GPS: Graph contrastive learning via multi-scale augmented views from adversarial pooling. Science China Information Sciences, 68(1), 112101. [**[Paper]**](10.1007/s11432-022-3952-3)
 
 ## Graph Unpooling
 1. **[UL]** Guo Y, Zou D, Lerman G (2023) An Unpooling Layer for Graph Generation. In: Proceedings of The 26th International Conference on Artificial Intelligence and Statistics. PMLR, pp 3179–3209 [**[Paper]**](https://proceedings.mlr.press/v206/guo23a.html) [**[Code]**](https://github.com/guo00413/graph_unpooling) 
+
+1. **[pastUnpool]** Amouzad, A., Dehghanian, Z., Saravani, S., Amirmazlaghani, M., & Roshanfekr, B. (2024). Graph isomorphism u-net. Expert Systems with Applications, 236, 121280. [**[Paper]**](https://doi.org/10.1016/j.eswa.2023.121280)
+
 
 ## Benchmark Datasets
 <table border="1">
@@ -384,11 +445,17 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 1. Errica, F., Podda, M., Bacciu, D., & Micheli, A. (2019, September). A Fair Comparison of Graph Neural Networks for Graph Classification. In International Conference on Learning Representations. [**[Paper]**](https://openreview.net/forum?id=HygDF6NFPB) [**[Code]**](https://github.com/diningphil/gnn-comparison) 
 
-1. Yang, Z., Zhang, G., Wu, J., Yang, J., Sheng, Q. Z., Xue, S., ... & Li’o, P. (2023). A comprehensive survey of graph-level learning. arXiv preprint arXiv:2301.05860. [**[Paper]**](https://arxiv.org/abs/2301.05860v1) [**[Github]**](https://github.com/ZhenyuYangMQ/Awesome-Graph-Level-Learning) 
+1. Yang, Z., Zhang, G., Wu, J., Yang, J., Sheng, Q. Z., Xue, S., ... & Lio, P. (2024). State of the art and potentialities of graph-level learning. ACM Computing Surveys, 57(2), 1-40. [**[Paper]**](https://doi.org/10.1145/3695863) [**[Github]**](https://github.com/ZhenyuYangMQ/Awesome-Graph-Level-Learning) 
 
 1. Lachi, V., Moallemy-Oureh, A., Roth, A., & Welke, P. (2023, December). Graph Pooling Provably Improves Expressivity. In NeurIPS 2023 Workshop: New Frontiers in Graph Learning. [**[Paper]**](https://openreview.net/forum?id=lR5NYB9zrv) 
 
+1. Hashemi, M., Gong, S., Ni, J., Fan, W., Prakash, B. A., & Jin, W. (2024, August). A comprehensive survey on graph reduction: sparsification, coarsening, and condensation. In Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (pp. 8058-8066). [**[Paper]**](https://dl.acm.org/doi/abs/10.24963/ijcai.2024/891) 
 
+1. Job, S., Tao, X., Cai, T., Li, L., Sheng, Q. Z., Xie, H., & Yong, J. (2025). Causal integration in graph neural networks toward enhanced classification: benchmarking and advancements for robust performance. World Wide Web, 28(3), 30. [**[Paper]**](https://doi.org/10.1007/s11280-025-01343-1) 
+
+1. Li, Z. P., Wang, S. G., Zhang, Q. H., Pan, Y. J., Xiao, N. A., Guo, J. Y., ... & Huang, D. S. (2024). Graph pooling for graph-level representation learning: a survey. Artificial Intelligence Review, 58(2), 45. [**[Paper]**](https://doi.org/10.1007/s10462-024-10949-2) 
+
+1. Wang, P., Luo, J., Shen, Y., Zhang, M., Qin, S., Heng, S., & Luo, X. (2024). A comprehensive graph pooling benchmark: Effectiveness, robustness and generalizability. arXiv preprint arXiv:2406.09031. [**[Paper]**](https://openreview.net/forum?id=Onw93uJCWO)[**[Code]**](https://github.com/goose315/Graph_Pooling_Benchmark) 
 
 
 ## Applications in Multi-omics Data
@@ -463,6 +530,14 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 1. **[GRN]** Gürler, Z., Gharsallaoui, M. A., Rekik, I., & Alzheimer’s Disease Neuroimaging Initiative. (2023). Template-based graph registration network for boosting the diagnosis of brain connectivity disorders. Computerized Medical Imaging and Graphics, 103, 102140.   [**[Paper]**](https://doi.org/10.1016/j.compmedimag.2022.102140) [**[Code]**](https://github.com/basiralab/GRN)
 
+1. **[BioX-CPath]** Gallagher-Syed, A., Senior, H., Alwazzan, O., Pontarini, E., Bombardieri, M., Pitzalis, C., ... & Slabaugh, G. (2025). BioX-CPath: Biologically-driven Explainable Diagnostics for Multistain IHC Computational Pathology. In Proceedings of the Computer Vision and Pattern Recognition Conference (pp. 10372-10383).   [**[Paper]**](https://openaccess.thecvf.com/content/CVPR2025/html/Gallagher-Syed_BioX-CPath_Biologically-driven_Explainable_Diagnostics_for_Multistain_IHC_Computational_Pathology_CVPR_2025_paper.html) [**[Code]**]( https://github.com/AmayaGS/BioX-CPath)
+
+1. **[DomainGCN]** Ding, R., Li, L., Soans, R., Shah, T., Krishnan, R., Sze, M. A., ... & Chen, A. (2025, April). Predicting ulcer in H&E images of inflammatory bowel disease using domain-knowledge-driven graph neural network. In 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) (pp. 1-5). IEEE.  [**[Paper]**](10.1109/ISBI60581.2025.10980783) 
+
+1. **[BRS-GCN]** Qin, Z., Li, Y., Song, X., & Chai, L. (2025). Classification of Neuropsychiatric Disorders via Brain-Region-Selected Graph Convolutional Network. IEEE Transactions on Neural Systems and Rehabilitation Engineering.  [**[Paper]**](10.1109/TNSRE.2025.3565627) 
+
+1. **[GAFD]** Wang, Q., Zhang, J., Li, L., Qiao, L., Yap, P. T., & Liu, M. (2025). Graph augmentation guided federated knowledge distillation for multisite functional MRI analysis. Pattern Recognition, 164, 111559.  [**[Paper]**](https://doi.org/10.1016/j.patcog.2025.111559) 
+
 ### Proteomics
 
 1. **[HIGH-PPI]** Gao, Z., Jiang, C., Zhang, J., Jiang, X., Li, L., Zhao, P., ... & Li, J. (2023). Hierarchical graph learning for protein–protein interaction. Nature Communications, 14(1), 1093. [**[Paper]**](https://doi.org/10.1038/s41467-023-36736-1) [**[Code]**](https://github.com/zqgao22/HIGH-PPI)
@@ -520,6 +595,15 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0.  Hermosilla Casajús, P., Schäfer, M., Lang, M., Fackelmann, G., Vázquez Alcocer, P. P., Kozliková, B., ... & Ropinski, T. (2021). Intrinsic-extrinsic convolution and pooling for learning on 3D protein structures. In International Conference on Learning Representations, ICLR 2021: Vienna, Austria, May 04 2021 (pp. 1-16). OpenReview. net. [**[Paper]**](https://openreview.net/forum?id=l0mSUROpwY) [**[Code]**](https://github.com/phermosilla/IEConv_proteins)
 
+0. **[MSNGO]** Wang, B., Cui, B., Chen, S., Wang, X., Wang, Y., & Li, J. (2025). MSNGO: multi-species protein function annotation based on 3D protein structure and network propagation. Bioinformatics, 41(5), btaf285. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btaf285) [**[Code]**](https://github.com/blingbell/MSNGO)
+
+0. **[MGU-PPIS]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1016/j.compbiolchem.2025.108485) [**[Code]**](http://github.com/1415647714/MGUPPIS)
+
+0. **[PNAbind]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1007/s12551-024-01201-w) [**[Code]**](https://github.com/jaredsagendorf/pnabind)
+
+0. **[PNAbind]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1007/s12551-024-01201-w) [**[Code]**](https://github.com/jaredsagendorf/pnabind)
+
+
 ### Metabolomics
 1. Baranwal, M., Magner, A., Elvati, P., Saldinger, J., Violi, A., & Hero, A. O. (2020). A deep learning architecture for metabolic pathway prediction. Bioinformatics, 36(8), 2547-2553. [**[Paper]**](https://doi.org/10.1093/bioinformatics/btz954) [**[Code]**](https://github.com/baranwa2/MetabolicPathwayPrediction)
 
@@ -530,5 +614,22 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0.  Li, B., & Nabavi, S. (2024). A multimodal graph neural network framework for cancer molecular subtype classification. BMC bioinformatics, 25(1), 27. [**[Paper]**](https://doi.org/10.1186/s12859-023-05622-4)
 
+
+## Applications in Biological Computing and Molecular Modeling
+### Molecular Modeling
+1. **[AETP]** Pham, P. (2025). An enhancement of multi-scope topological graph pooling and representation learning with attention for molecular graph classification. Computational Biology and Chemistry, 108548. [**[Paper]**](https://doi.org/10.1016/j.compbiolchem.2025.108548) 
+
+### Biological Computing
+1. **[BF-GCN]** Pham, P. (2025). Li, C., Tang, T., Pan, Y., Yang, L., Zhang, S., Chen, Z., ... & Xu, P. (2024). An efficient graph learning system for emotion recognition inspired by the cognitive prior graph of eeg brain network. IEEE Transactions on Neural Networks and Learning Systems, 36(4), 7130-7144. [**[Paper]**](10.1109/TNNLS.2024.3405663)  [**[Code]**](https://github.com/UESTC-BAC/BF-GCN)
+
+1. **[PND‐Net]** Bera, A., Bhattacharjee, D., & Krejcar, O. (2024). PND-Net: plant nutrition deficiency and disease classification using graph convolutional network. Scientific Reports, 14(1), 15537. [**[Paper]**](https://doi.org/10.1038/s41598-024-66543-7) 
+
+1. Sun, K., Peng, C., Yu, S., Han, Z., & Xia, F. (2024). From electroencephalogram data to brain networks: Graph-learning-based brain disease diagnosis. IEEE Intelligent Systems, 39(2), 21-29. [**[Paper]**](10.1109/MIS.2024.3352972) 
+
+1. **[WSGMB]** Pan, S., Jiang, X., & Zhang, K. (2024). WSGMB: weight signed graph neural network for microbial biomarker identification. Briefings in Bioinformatics, 25(1), bbad448. [**[Paper]**](https://doi.org/10.1093/bib/bbad448) [**[Code]**](https://github.com/panshuheng/WSGMB/tree/master)
+
+1. **[DearLLM]** Xu, Y., Jiang, X., Chu, X., Qiu, R., Feng, Y., Ding, H., ... & Xie, B. (2025, April). DearLLM: Enhancing Personalized Healthcare via Large Language Models-Deduced Feature Correlations. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 1, pp. 941-949). [**[Paper]**](10.1609/aaai.v39i1.32079) [**[Code]**](https://github.com/Artessay/DearLLM)
+
 ## Update
-* 2024-05-20: Newly added sections: Libraries, Genomics, Metabolomics, Multi-omics; additional papers; and revised title.
+* 2024-05-20: New sections: Libraries, Genomics, Metabolomics, Multi-omics; new papers; and revised title.
+* 2025-10-29: New sections: Applications in Biological Computing and Molecular Modeling, and new papers in Global Pooling, Clustering Pooling, Edge Pooling, Hybrid Pooling, Graph Unpooling, Evaluation, Review and Analysis, Radiomics, and Proteomics.
