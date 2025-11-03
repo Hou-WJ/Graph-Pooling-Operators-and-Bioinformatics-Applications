@@ -201,7 +201,7 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[SSHPool]** Xu, Z., Cui, L., Wang, Y., Du, H., Bai, L., & Hancock, E. R. (2024). SSHPool: The Separated Subgraph-based Hierarchical Pooling. arXiv preprint arXiv:2403.16133. [**[Paper]**](https://doi.org/10.48550/arXiv.2403.16133) 
 
-0. **[MGPool]** Deng, S., Yang, G., Yang, Y., Gong, Z., Chen, C., Chen, X., & Hao, Z. (2024). Module-based graph pooling for graph classification. Pattern Recognition, 154, 110606. [**[Paper]**](https://doi.org/10.1016/j.patcog.2024.110606) [**[Code]**](https://github.com/ SubaiDeng/MGPool)
+0. **[MGPool]** Deng, S., Yang, G., Yang, Y., Gong, Z., Chen, C., Chen, X., & Hao, Z. (2024). Module-based graph pooling for graph classification. Pattern Recognition, 154, 110606. [**[Paper]**](https://doi.org/10.1016/j.patcog.2024.110606) [**[Code]**](https://github.com/SubaiDeng/MGPool)
 
 0. **[HC-GAE]** Bai, L., Xu, Z., Cui, L., Li, M., Wang, Y., & Hancock, E. (2024). HC-GAE: The Hierarchical Cluster-based Graph Auto-Encoder for Graph Representation Learning. Advances in Neural Information Processing Systems, 37, 127968-127986. [**[Paper]**](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e6e706454d72c18582b9c1ff70b11f7d-Abstract-Conference.html) [**[Code]**](https://github.com/JonathanGXu/HC-GAE)
 
@@ -284,7 +284,7 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[MGR]** Huang, W., Chen, Y., Jiang, X., Gao, C., Zhang, T., Chen, Q., & Wang, Y. (2025, April). Mitigating Pervasive Modality Absence Through Multimodal Generalization and Refinement. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 25, pp. 26796-26804). [**[Paper]**](10.1609/aaai.v39i25.34883)
 
-0. **[GrePool]** Liu, C., Yu, W., Gao, K., Ma, X., Zhan, Y., Wu, J., ... & Du, B. (2025). Graph explicit pooling for graph-level representation learning. Neural Networks, 181, 106790. [**[Paper]**](https://doi.org/10.1016/j.neunet.2024.106790) [**[Code]**](https: //github.com/LiuChuang0059/GrePool) 
+0. **[GrePool]** Liu, C., Yu, W., Gao, K., Ma, X., Zhan, Y., Wu, J., ... & Du, B. (2025). Graph explicit pooling for graph-level representation learning. Neural Networks, 181, 106790. [**[Paper]**](https://doi.org/10.1016/j.neunet.2024.106790) [**[Code]**](https://github.com/LiuChuang0059/GrePool) 
 
 0. **[Fair Graph Pooling]** Wang, Z., Chu, Z., Doan, T. V., Wang, S., Wu, Y., Palade, V., & Zhang, W. (2025, April). Fair graph u-net: A fair graph learning framework integrating group and individual awareness. In proceedings of the AAAI conference on artificial intelligence (Vol. 39, No. 27, pp. 28485-28493). [**[Paper]**](10.1609/aaai.v39i27.35071)
 
@@ -599,9 +599,8 @@ Graph pooling is an essential component of GNNs for graph-level representations.
 
 0. **[MGU-PPIS]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1016/j.compbiolchem.2025.108485) [**[Code]**](http://github.com/1415647714/MGUPPIS)
 
-0. **[PNAbind]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1007/s12551-024-01201-w) [**[Code]**](https://github.com/jaredsagendorf/pnabind)
+0. **[PNAbind]** Sagendorf, J. M., Mitra, R., Huang, J., Chen, X. S., & Rohs, R. (2024). Structure-based prediction of protein-nucleic acid binding using graph neural networks. Biophysical Reviews, 16(3), 297-314. [**[Paper]**](https://doi.org/10.1007/s12551-024-01201-w) [**[Code]**](https://github.com/jaredsagendorf/pnabind)
 
-0. **[PNAbind]** Shao, D., Zou, Y., Ma, L., & Yi, S. (2025). Multiscale and global-local U-Net for protein-protein interaction site prediction. Computational Biology and Chemistry, 108485. [**[Paper]**](https://doi.org/10.1007/s12551-024-01201-w) [**[Code]**](https://github.com/jaredsagendorf/pnabind)
 
 
 ### Metabolomics
